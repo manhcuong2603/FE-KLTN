@@ -923,6 +923,7 @@ header {
     width: 15px;
     height: 15px;
     border-radius: 50px;
+    cursor: pointer;
     background-color: #7979786d;
 }
 
@@ -932,6 +933,7 @@ header {
 
 /* ========Home-8============= */
 .container-coment-donate {
+    padding-top: 30px;
     width: 100%;
     height: 790px;
     background-color: #faf8f8;
@@ -940,12 +942,13 @@ header {
 .container-coment-donate h2 {
     font-size: 37px;
     font-weight: 700;
-    line-height: 1.4;
     color: #000;
     margin-left: 150px;
 }
 
 .container-coment-donate h3 {
+    position: absolute;
+    margin-top: 15px;
     font-size: 18px;
     color: #555;
     margin-left: 150px;
