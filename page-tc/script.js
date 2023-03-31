@@ -1,5 +1,4 @@
-var menu = document.querySelector('.container-menu-two ');
-var logo = document.querySelector('.logo-hover');
+var btntop = document.querySelector('.img-on-bot');
 ///slide 1
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -31,12 +30,10 @@ setInterval(function () {
 ////thanh menu doi mau
 window.addEventListener('scroll', function () {
     if (this.window.pageYOffset > 50) {
-        menu.classList.add('doimenu');
-        logo.classList.add('logos');
+        btntop.classList.add('img-on-bots');
     }
     else {
-        menu.classList.remove('doimenu');
-        logo.classList.remove('logos');
+        btntop.classList.remove('img-on-bots');
     }
 })
 
@@ -100,5 +97,22 @@ setInterval(function () {
     threePlusDivs(1);
 }, 3000);
 
-//Home-8
+//auto-slide
+var myIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("auto-slide");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+// click trở về đầu trang
+btntop.onclick = function () {
+    document.documentElement.scrollTop = 0;
+}
