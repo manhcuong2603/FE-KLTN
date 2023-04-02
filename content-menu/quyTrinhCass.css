@@ -272,17 +272,17 @@ input:hover {
 
 /* ============CuuHo============= */
 
-.container-rescue {
+.container-rescue-quytrinh {
     width: 100%;
     height: 400px;
-    background-image: url(./access/cuuho.jpg);
+    background-image: url(./access/cassQuytrinh.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-top: -95px;
     position: relative;
 }
 
-.container-rescue:before {
+.container-rescue-quytrinh:before {
     content: '';
     position: absolute;
     top: 21px;
@@ -293,7 +293,7 @@ input:hover {
     background-image: linear-gradient(rgb(0 0 0 / 50%) 5%, transparent);
 }
 
-.container-rescue h2 {
+.container-rescue-quytrinh h2 {
     position: absolute;
     color: #f2f2f2;
     left: 50%;
@@ -302,7 +302,7 @@ input:hover {
     bottom: 25%;
 }
 
-.container-rescue span {
+.container-rescue-quytrinh span {
     position: absolute;
     color: #f5f5f5;
     left: 50%;
@@ -311,21 +311,73 @@ input:hover {
     bottom: 25%;
 }
 
-.container-rescue span a {
+.container-rescue-quytrinh span a {
     text-decoration: none;
     color: #f5f5f5;
 }
 
-.container-rescue span a:hover {
+.container-rescue-quytrinh span a:hover {
     color: #aac633;
 }
 
-.quyTac {
-    background-image: url(./access/quyTac.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.quyTrinh {
     width: 100%;
-    height: 800px;
+    height: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-quytrinh {
+    box-sizing: border-box;
+    margin-top: 70px;
+    width: 970px;
+    height: 1430px;
+    background-color: #ffa79f;
+    border-radius: 10px 10px 0 0;
+}
+
+.text-quytrinh {
+    display: flex;
+    flex-direction: column;
+    height: 730px;
+    padding: 10px 25px;
+}
+
+.text-quytrinh h2 {
+    color: #ffff;
+}
+
+.text-quytrinh li {
+    position: relative;
+    margin: 0 36px 15px 0;
+    padding-left: 45px;
+    font-size: 18px;
+    list-style: none;
+    color: #ffff;
+    line-height: 1.7;
+}
+
+.text-quytrinh li b {
+    position: absolute;
+    font-size: 20px;
+    transform: translateX(-30px);
+}
+
+.text-quytrinh li>span {
+    font-size: 18px;
+    color: #3b3b3b;
+}
+
+.text-quytrinh span {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #3b3b3b;
+}
+
+.img-quytrinh {
+    height: 780px;
+    background-size: 100% 100%;
+    background-image: url(/content-menu/access/quytrinhCass.jpg);
 }
 
 /* =========END CuuHo============= */
