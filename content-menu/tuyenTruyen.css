@@ -186,7 +186,6 @@ input:hover {
     cursor: pointer;
 }
 
-
 .content-service li,
 .content-service .a-tc {
     font-size: 18px;
@@ -275,22 +274,20 @@ input:hover {
     color: #ffff;
 }
 
-
 /* ==========END MENU==================== */
-
 /* ============CuuHo============= */
 
-.container-rescue-quytrinh {
+.container-tuyenTruyen {
     width: 100%;
     height: 400px;
-    background-image: url(./access/cassQuytrinh.jpg);
+    background-image: url(./access/tuyentruyen.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-top: -95px;
     position: relative;
 }
 
-.container-rescue-quytrinh:before {
+.container-tuyenTruyen:before {
     content: '';
     position: absolute;
     top: 21px;
@@ -301,7 +298,7 @@ input:hover {
     background-image: linear-gradient(rgb(0 0 0 / 50%) 5%, transparent);
 }
 
-.container-rescue-quytrinh h2 {
+.container-tuyenTruyen h2 {
     position: absolute;
     color: #f2f2f2;
     left: 50%;
@@ -310,7 +307,7 @@ input:hover {
     bottom: 25%;
 }
 
-.container-rescue-quytrinh span {
+.container-tuyenTruyen span {
     position: absolute;
     color: #f5f5f5;
     left: 50%;
@@ -319,80 +316,173 @@ input:hover {
     bottom: 25%;
 }
 
-.container-rescue-quytrinh span a {
+.container-tuyenTruyen span a {
     text-decoration: none;
     color: #f5f5f5;
 }
 
-.container-rescue-quytrinh span a:hover {
+.container-tuyenTruyen span a:hover {
     color: #aac633;
-}
-
-.quyTrinh {
-    width: 100%;
-    height: 1600px;
-    display: flex;
-    justify-content: center;
-}
-
-.container-quytrinh {
-    box-sizing: border-box;
-    margin-top: 70px;
-    width: 970px;
-    height: 1430px;
-    background-color: #ffa79f;
-    border-radius: 10px 10px 0 0;
-}
-
-.text-quytrinh {
-    display: flex;
-    flex-direction: column;
-    height: 730px;
-    padding: 10px 25px;
-}
-
-.text-quytrinh h2 {
-    color: #ffff;
-}
-
-.text-quytrinh li {
-    position: relative;
-    margin: 0 36px 15px 0;
-    padding-left: 45px;
-    font-size: 18px;
-    list-style: none;
-    color: #ffff;
-    line-height: 1.7;
-}
-
-.text-quytrinh li b {
-    position: absolute;
-    font-size: 20px;
-    transform: translateX(-30px);
-}
-
-.text-quytrinh li>span {
-    font-size: 18px;
-    color: #3b3b3b;
-}
-
-.text-quytrinh span {
-    margin: 5px 0;
-    font-size: 18px;
-    color: #3b3b3b;
-}
-
-.img-quytrinh {
-    height: 780px;
-    background-size: 100% 100%;
-    background-image: url(/content-menu/access/quytrinhCass.jpg);
 }
 
 /* =========END CuuHo============= */
 
 
+/* ==========Home-7============= */
+.container-home-seven {
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
 
 
+
+.container-slide-seven {
+    width: 100%;
+    height: 1450px;
+    position: relative;
+    transition: 1s ease-in-out;
+}
+
+.slide-home-seven {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    background-color: #ffff;
+}
+
+.slide-home-seven:nth-child(3) {
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.slide-home-seven span {
+    font-size: 30px;
+    top: 110%;
+    position: absolute;
+    z-index: -1;
+}
+
+.slide-home-seven .content-2023 {
+    position: absolute;
+    width: 70%;
+    height: 750px;
+    background-image: url(./access/2023.jpg);
+    background-size: 100% 100%;
+    top: 120%;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.content-slide-seven {
+    width: 371px;
+    height: 447px;
+    border-radius: 10px;
+    margin: 15px 15px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.content-slide-seven:hover .name-seven {
+    text-decoration-line: underline
+}
+
+.content-slide-seven .img-slide-seven {
+    width: 371px;
+    position: relative;
+}
+
+.img-slide-seven img {
+    width: 371px;
+    border-radius: 10px;
+}
+
+.img-slide-seven .days-seven {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    height: 60px;
+    bottom: 5%;
+    left: 10px;
+    background-color: #fff;
+}
+
+.img-slide-seven .days-seven h2 {
+    position: absolute;
+    color: #f3f3f3;
+    width: 90px;
+    margin-top: 0;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #aac633;
+}
+
+.days-seven h3 {
+    color: #555;
+    bottom: -20px;
+    padding: 2px 0;
+    position: absolute;
+}
+
+.content-slide-seven .name-seven {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.content-slide-seven .title-seven {
+    font-size: 15px;
+    width: 350px;
+    color: #555;
+    margin-left: 10px;
+}
+
+.content-slide-seven button {
+    position: absolute;
+    margin-left: 280px;
+    background-color: transparent;
+    color: #aac633;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.content-slide-seven button i {
+    margin-left: 5px;
+}
+
+.content-slide-seven button:hover .paw-seven {
+    transform: rotate(50deg);
+    transition: all 1s;
+}
+
+.container-home-seven .dots-slide-seven {
+    margin-top: 5px;
+    display: flex;
+    z-index: 10;
+}
+
+.dots-slide-seven .dots-seven {
+    margin: 0 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #7979786d;
+}
+
+.dots-slide-seven .active-sevent {
+    background-color: #aac633;
+}
 
 /* ========Home-8============= */
 .container-coment-donate {

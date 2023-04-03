@@ -79,7 +79,7 @@ header {
 
 .content-login-one {
     position: absolute;
-    width: 31%;
+    width: 35%;
     height: 50px;
     right: 10%;
     display: flex;
@@ -92,22 +92,30 @@ header {
     color: #000;
     font-size: 16px;
     font-weight: 600;
-    margin: 0 10px;
+    border-radius: 20px;
+    margin-left: 5px;
+    border: 1px solid transparent;
+    padding: 10px 15px;
 }
 
 .content-login-one a:nth-child(4) {
     background-color: #5cb9ef;
     color: #f2f2f2;
-    border-radius: 20px;
-    padding: 10px 15px;
+
 }
 
 .content-login-one a:nth-child(4):hover {
     background-color: #3398d4;
 }
 
+.content-login-one a:nth-child(2):hover,
+.content-login-one a:nth-child(3):hover {
+    border: 1px solid #5cb9ef;
+}
+
 .content-login-one .group {
     display: flex;
+    margin-right: 10px;
     line-height: 28px;
     align-items: center;
     position: relative;
@@ -763,82 +771,4 @@ input:hover {
     font-size: 16px;
     display: flex;
     margin-top: 20px;
-}
-
-/*===========auto-slide=========== */
-.slide-facebook {
-    border-radius: 50%;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 99991;
-    width: 70px;
-    background-color: #aac633;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.slide-facebook:after {
-    position: absolute;
-    content: '';
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    box-shadow: 0 0 10px #aac633, 0 0 10px #aac633;
-    animation: shadow 1.5s infinite;
-}
-
-@keyframes shadow {
-    0% {
-        transform: scale(1.05);
-    }
-
-    50% {
-        transform: scale(1.15);
-    }
-
-    100% {
-        transform: scale(1.25);
-        opacity: 0;
-    }
-}
-
-.slide-facebook .fix-bot {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slide-facebook .auto-slide {
-    background-color: #f2f2f2;
-    padding: 9px;
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-}
-
-.slide-facebook .img-on-bot {
-    width: 40px;
-    right: -20px;
-    bottom: 100%;
-    display: none;
-    position: relative;
-}
-
-.slide-facebook .img-on-bots {
-    display: block;
-}
-
-.slide-facebook i {
-    right: 10px;
-    font-size: 13px;
-    bottom: 125%;
-    border: none;
-    color: #ffff;
-    position: absolute;
-    z-index: 100;
 }
