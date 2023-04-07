@@ -1,213 +1,169 @@
 * {
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
-
-    body {
-        background-size: cover;
-    }
-}
-
-body,
-html {
+html,
+body {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background-color: #f0f2f5;
-    background-image: url("https://1.bp.blogspot.com/-fd1WXKk-TAc/XyqfngP4PiI/AAAAAAAAVMw/umQz3tkxtg43uPIy8W5og6gAkpCfjaTvACLcBGAsYHQ/w1563-h1563/bg-snell.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 100%;
 }
 
-.dust-paarticle {
-    position: absolute;
+.container-forgot {
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #455fc7;
 }
 
-#snell {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    margin-top: 50px;
-}
-
-#eye1 {
-    animation: swing ease-in-out .6s infinite alternate;
-    transform-origin: bottom;
-    transform-box: fill-box;
-    left: calc(52% - .0rem);
-}
-
-#eye2 {
-    animation: swing ease-in-out .5s infinite alternate;
-    transform-origin: bottom;
-    transform-box: fill-box;
-    left: calc(40% - .0rem);
-}
-
-
-#dust-paarticle path {
-    transform-box: fill-box;
-    transform-origin: center;
-}
-
-/* Input */
-.form-forgot {
-    margin-top: 150px;
-    height: 500px;
-    width: 35%;
+.container-forgot .forgot {
+    width: 60%;
+    height: 70%;
+    background-color: aliceblue;
     border-radius: 10px;
-    border: 1px solid #ffffff;
-}
-
-.form-forgot h2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 0;
-    color: #ffffff;
-}
-
-.form-forgot .forgot {
-    position: absolute;
-    left: 50%;
-    bottom: 30%;
-    font-size: 17px;
-    transform: translateX(-50%);
-    text-decoration: none;
-    color: #8a8387;
-}
-
-.form-forgot .forgot:nth-child(odd) {
-    bottom: 23%;
-}
-
-.form-forgot .forgot:hover {
-    color: #ffffff;
-}
-
-.wave-group-forgot {
-    width: 350px;
+    display: flex;
     position: relative;
-    transform: translateY(100px);
 }
 
-.wave-group-forgot .input {
-    border-radius: 5px;
-    margin-top: 30px;
-    font-size: 16px;
-    padding: 10px 10px 10px 10px;
-    display: block;
-    width: 340px;
-    border: none;
-    color: #f0f2f5;
-    border: 1px solid #ffff;
-    background: transparent;
+.forgot .imgLogin {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-image: url(../content-menu/access/pét.jpg);
+    border-radius: 10px 0 0px 10px;
+    background-size: 100% 100%;
 }
 
-.wave-group-forgot .input:focus {
+.forgot .forgot-Input {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forgot-Input .error {
+    height: 19px;
+    width: 295px;
+    color: red;
+}
+
+.forgot .forgot-Input .Input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(101, 99, 99);
+}
+
+.forgot-Input .Input h2 {
+    margin: 20px;
+}
+
+.forgot-Input .Input input {
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: 300px;
+    padding: 8px 15px;
+    margin: 8px 0;
+    height: 25px;
     outline: none;
 }
 
-.wave-group-forgot .label {
+.forgot-Input .Input input:nth-child(3) {
+    margin-top: 20px;
+}
+
+.forgot-Input .Input input:focus {
+    border: 1px solid black;
+}
+
+.forgot-Input .Input button {
+    margin-top: 15px;
+    border-radius: 50px;
+    width: 330px;
+    padding: 8px 15px;
+    height: 40px;
+    background-color: #2f59cda4;
     color: #ffff;
-    font-size: 18px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 10px;
-    top: 10px;
-    display: flex;
-}
-
-.wave-group-forgot .label-char {
-    transition: 0.2s ease all;
-    transition-delay: calc(var(--index) * .05s);
-}
-
-.wave-group-forgot .input:focus~label .label-char,
-.wave-group-forgot .input:valid~label .label-char {
-    transform: translateY(-30px);
-    font-size: 17px;
-    color: #bdc3da;
-}
-
-.wave-group-forgot .bar {
-    position: relative;
-    display: block;
-    width: 200px;
-}
-
-
-.wave-group-forgot .bar:before {
-    left: 50%;
-}
-
-.wave-group-forgot .bar:after {
-    right: 50%;
-}
-
-.btn-login {
-    display: flex;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    margin-top: 150px;
-    align-items: center;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 17px;
-    padding: 0.8em 1.3em 0.8em 0.9em;
-    color: white;
-    background: #ad5389;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     border: none;
-    letter-spacing: 0.05em;
-    border-radius: 16px;
+    outline: none;
     cursor: pointer;
-    z-index: 10;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
 }
 
-.btn-login svg {
-    margin-right: 3px;
-    transform: rotate(30deg);
-    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+.forgot-Input .Input button:hover {
+    background-color: #2F58CD;
+    transition: all 0.5s;
 }
 
-.btn-login .span-login {
-    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+.forgot-Input .Input .btn-forgot i {
+    color: #ffff;
+    margin-left: 10px;
 }
 
-.btn-login:hover svg {
-    transform: translateX(5px) rotate(90deg);
+.forgot .forgot-Input .btn-gg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(101, 99, 99);
 }
 
-.btn-login:hover .span-login {
-    transform: translateX(7px);
+.forgot .forgot-Input .btn-gg button {
+    border-radius: 50px;
+    width: 330px;
+    padding: 8px 15px;
+    height: 40px;
+    background-color: #3f497fe2;
+    color: #ffff;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.5s;
 }
 
-/*************swing************/
-@keyframes swing {
-    0% {
-        transform: rotate(8deg);
-    }
-
-    100% {
-        transform: rotate(-8deg);
-    }
+.forgot-Input .btn-gg button i {
+    margin-right: 10px;
 }
 
+.forgot .forgot-Input .btn-gg button:hover {
+    background-color: #3F497F;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900');
+.forgot .forgot-Input .btn-gg button:nth-child(1) {
+    margin-bottom: 10px;
+    background-color: #f94c29e8;
+}
 
+.forgot .forgot-Input .btn-gg button:nth-child(1):hover {
+    background-color: #fb411c;
+}
 
+.forgot-Input .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-@media (min-width: 320px) and (max-width: 375px) {
+.forgot-Input .account a {
+    text-decoration: none;
+    margin: 7px 0;
+    color: #85CDFD;
+}
 
-    body {
-        background-size: cover;
-    }
+.forgot-Input .account a:hover {
+    color: #47b1f7;
 }
