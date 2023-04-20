@@ -44,6 +44,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .login-Input .error {
@@ -57,6 +58,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
+    margin-bottom: 15px;
     border-bottom: 1px solid rgb(101, 99, 99);
 }
 
@@ -69,6 +71,7 @@ body {
     border-radius: 50px;
     width: 300px;
     padding: 8px 15px;
+    margin: 5px 0;
     height: 25px;
     outline: none;
 }
@@ -84,7 +87,7 @@ body {
 .login-Input .Input button {
     margin-top: 15px;
     border-radius: 50px;
-    width: 330px;
+    width: 130px;
     padding: 8px 15px;
     height: 40px;
     background-color: #2f59cda4;
@@ -101,48 +104,6 @@ body {
     transition: all 0.5s;
 }
 
-.login .login-Input .btn-gg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid rgb(101, 99, 99);
-}
-
-.login .login-Input .btn-gg button {
-    border-radius: 50px;
-    width: 330px;
-    padding: 8px 15px;
-    height: 40px;
-    background-color: #3f497fe2;
-    color: #ffff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s;
-}
-
-.login-Input .btn-gg button i {
-    margin-right: 10px;
-}
-
-.login .login-Input .btn-gg button:hover {
-    background-color: #3F497F;
-}
-
-.login .login-Input .btn-gg button:nth-child(1) {
-    margin-bottom: 10px;
-    background-color: #f94c29e8;
-}
-
-.login .login-Input .btn-gg button:nth-child(1):hover {
-    background-color: #fb411c;
-}
-
 .login-Input .account {
     display: flex;
     flex-direction: column;
@@ -152,7 +113,7 @@ body {
 .login-Input .account a {
     text-decoration: none;
     margin: 7px 0;
-    color: #85CDFD;
+    color: #166ba3;
 }
 
 .login-Input .account a:hover {

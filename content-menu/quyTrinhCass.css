@@ -158,6 +158,7 @@ input:hover {
 
 /*  */
 .menu-two {
+    background-color: #f5f5f5;
     display: flex;
     position: relative;
     width: 100%;
@@ -190,7 +191,7 @@ input:hover {
 .content-service li,
 .content-service .a-tc {
     font-size: 18px;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     margin-left: 45px;
     position: relative;
@@ -287,7 +288,7 @@ input:hover {
     background-image: url(./access/cassQuytrinh.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-top: -95px;
+    margin-top: -30px;
     position: relative;
 }
 

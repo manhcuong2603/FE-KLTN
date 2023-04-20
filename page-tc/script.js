@@ -57,45 +57,66 @@ function showDivs(n) {
     if (n > x.length) { slidesIndex = 1 }
     if (n < 1) { slidesIndex = x.length }
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+        x[i].style.visibility = "hidden";
     }
+
+
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active-gray", "");
     }
-    x[slidesIndex - 1].style.display = "block";
+    x[slidesIndex - 1].style.visibility = "inherit";
     dots[slidesIndex - 1].className += " active-gray";
 }
 
 // slide 3
-var threeslideIndex = 1;
-threeShowDivs(threeslideIndex);
+var slideIndex3 = 1;
+showSlides3(slideIndex3);
 
-function threePlusDivs(n) {
-    threeShowDivs(threeslideIndex += n);
+var slideInterval = setInterval(function () {
+    plusSlides3(1);
+}, 3000); // change the time interval (in milliseconds) as needed
+
+function plusSlides3(n) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(function () {
+        plusSlides3(1);
+    }, 3000); // reset the interval timer
+    showSlides3(slideIndex3 += n);
 }
 
-function currentDivs(n) {
-    threeShowDivs(threeslideIndex = n);
+function currentSlides(n) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(function () {
+        plusSlides3(1);
+    }, 3000); // reset the interval timer
+    showSlides3(slideIndex3 = n);
 }
 
-function threeShowDivs(n) {
+function showSlides3(n) {
     var i;
-    var x = document.getElementsByClassName("slide-home-seven");
-    var threeDots = document.getElementsByClassName("dots-seven");
-    if (n > x.length) { threeslideIndex = 1 }
-    if (n < 1) { threeslideIndex = x.length }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.visibility = "hidden";
+    var slides3 = document.getElementsByClassName("content-slide-seven");
+    var dots = document.getElementsByClassName("dots-seven");
+    if (n > Math.ceil(slides3.length / 3)) {
+        slideIndex3 = 1;
     }
-    for (i = 0; i < threeDots.length; i++) {
-        threeDots[i].className = threeDots[i].className.replace(" active-sevent", "");
+    if (n < 1) {
+        slideIndex3 = Math.ceil(slides3.length / 3);
     }
-    x[threeslideIndex - 1].style.visibility = "inherit";
-    threeDots[threeslideIndex - 1].className += " active-sevent";
+    for (i = 0; i < slides3.length; i++) {
+        slides3[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    var start = (slideIndex3 - 1) * 3;
+    var end = start + 3;
+    for (i = start; i < end; i++) {
+        if (slides3[i]) {
+            slides3[i].style.display = "block";
+        }
+    }
+    dots[slideIndex3 - 1].className += " active";
 }
-setInterval(function () {
-    threePlusDivs(1);
-}, 3000);
 
 //auto-slide
 var myIndex = 0;
