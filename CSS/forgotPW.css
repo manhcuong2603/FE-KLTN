@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container-forgot {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #455fc7;
+}
+
+.container-forgot .forgot {
+    width: 60%;
+    height: 70%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+.forgot .imgRegister {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-image: url(../assets/pét.jpg);
+    border-radius: 10px 0 0px 10px;
+    background-size: 100% 100%;
+}
+
+.forgot .forgot-Input {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forgot-Input .error {
+    height: 19px;
+    width: 295px;
+    color: red;
+}
+
+.forgot .forgot-Input .Input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(101, 99, 99);
+}
+
+.forgot-Input .Input h2 {
+    margin: 20px;
+}
+
+.forgot-Input .Input input {
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: 300px;
+    padding: 8px 15px;
+    margin: 8px 0;
+    height: 25px;
+    outline: none;
+}
+
+.forgot-Input .Input input:nth-child(3) {
+    margin-top: 20px;
+}
+
+.forgot-Input .Input input:focus {
+    border: 1px solid black;
+}
+
+.forgot-Input .Input button {
+    margin-top: 15px;
+    border-radius: 50px;
+    width: 330px;
+    padding: 8px 15px;
+    height: 40px;
+    background-color: #2f59cda4;
+    color: #ffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.forgot-Input .Input button:hover {
+    background-color: #2F58CD;
+    transition: all 0.5s;
+}
+
+.forgot-Input .Input .btn-forgot i {
+    color: #ffff;
+    margin-left: 10px;
+}
+
+.forgot .forgot-Input .btn-gg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(101, 99, 99);
+}
+
+.forgot .forgot-Input .btn-gg button {
+    border-radius: 50px;
+    width: 330px;
+    padding: 8px 15px;
+    height: 40px;
+    background-color: #3f497fe2;
+    color: #ffff;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.forgot-Input .btn-gg button i {
+    margin-right: 10px;
+}
+
+.forgot .forgot-Input .btn-gg button:hover {
+    background-color: #3F497F;
+}
+
+.forgot .forgot-Input .btn-gg button:nth-child(1) {
+    margin-bottom: 10px;
+    background-color: #f94c29e8;
+}
+
+.forgot .forgot-Input .btn-gg button:nth-child(1):hover {
+    background-color: #fb411c;
+}
+
+.forgot-Input .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgot-Input .account a {
+    text-decoration: none;
+    margin: 7px 0;
+    color: #85CDFD;
+}
+
+.forgot-Input .account a:hover {
+    color: #47b1f7;
+}

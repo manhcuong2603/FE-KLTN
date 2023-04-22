@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách bài đăng</title>
+    <link rel="stylesheet" href="listBlog.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- thuvien slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <!-- thanh menu kế thừa nên để tượng trưng thôi nha -->
+    <header>
+        <div class="container-menu-two">
+            <div class="menu-one">
+                <div class="logo">
+                </div>
+                <div class="content-service-one">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fa-brands fa-spotify"></i>
+                    <i class="fa-sharp fa-solid fa-cart-shopping"> Spider's Shop </i>
+                </div>
+                <div class="content-login-one">
+                    <div class="group">
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                        <input placeholder="Search" type="search" class="input">
+                    </div>
+                    <a href="">Liên hệ</a>
+                    <a href="../Page/register.html">Đăng ký</a>
+                    <a href="../Page/login.html">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-two">
+            <div class="content-service">
+                <i class="fa-solid fa-house"></i>
+                <a class="a-tc" href="./index.html">Trang chủ</a>
+                <li class="service">Tìm mái ấm
+                    <ul class="ul-service">
+                        <a href="../Page/dog.html">Chó chờ đi chủ</a>
+                        <a href="../Page/cat.html">Mèo chờ đi chủ</a>
+                        <a href="../Page/dkNhan.html">Điều kiện nhận nuôi</a>
+                    </ul>
+                </li>
+                <li class="service">Cứu hộ
+                    <ul class="ul-service">
+                        <a href="../content-menu/CassRescue.html">Các case cứu hộ tiêu biểu</a>
+                        <a href="../content-menu/rescue.html">Quy tắc cứu hộ</a>
+                        <a href="../content-menu/quyTrinhCass.html">Quy tắc nhận case</a>
+                    </ul>
+                </li>
+                <li class="store">Kiến thức
+                    <ul class="ul-store">
+                        <a href="../Page/tuyenTruyen.html">Tuyên truyền</a>
+                        <a href="../Page/thuYcoBan.htm">Thú y cơ bản</a>
+                    </ul>
+                </li>
+                <li class="store">Hoạt động
+                    <ul class="ul-store">
+                        <a href="../content-menu/hoatDong.html">Sự kiện đã tổ chức</a>
+                        <a href="../content-menu/suKien.html">Sự kiện cùng đồng hành</a>
+                    </ul>
+                </li>
+                <li class="store">Ủng hộ và gây quỷ
+                    <ul class="ul-store lastStore">
+                        <a href="../Page/ungHo.html">Sản phẩm gây quỷ</a>
+                        <a href="#/">Danh sách ủng hộ</a>
+                    </ul>
+                </li>
+                <li class="store">Cộng đồng
+                    <!-- <ul class="ul-store lastStore">
+                        <a href="../Page/ungHo.html">Sản phẩm gây quỷ</a>
+                        <a href="#/">Danh sách ủng hộ</a>
+                    </ul> -->
+                </li>
+            </div>
+        </div>
+    </header>
+    <!-- Content Wrapper START -->
+    <div class="main-content">
+        <div class="row ">
+            <div class="col-lg-11 mx-auto ">
+                <div class="row listPostContainer">
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-2.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">You Should Know About Enlink</h4>
+                                <p class="m-b-20">Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear
+                                    claw topping. Chupa...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Darryl Day</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-3.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">Enlink Has The Answer</h4>
+                                <p class="m-b-20">Efficiently unleash cross-media information without cross-media value.
+                                    Quickly maximize ti...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-3.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Marshall Nichols</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-4.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">The Miracle Of Enlink</h4>
+                                <p class="m-b-20">Climb leg rub face on everything give attitude nap all day for under
+                                    the bed. Chase mice a...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-4.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Virgil Gonzales</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-5.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">Enlink Has The Answer</h4>
+                                <p class="m-b-20">European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
+                                    Cutlassfish porbeagle ...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-5.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Nicole Wyne</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-6.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">Seven Clarifications On Hand</h4>
+                                <p class="m-b-20">Let’s see what Chef Dee got that they don’t want us to eat. Let me be
+                                    clear, you have to m...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 3, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-6.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Riley Newman</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-7.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">The Modern Rules</h4>
+                                <p class="m-b-20">The palatable sensation we lovingly refer to as The Cheeseburger has a
+                                    distinguished and i...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 3, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-7.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Pamela Wanda</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-2.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">You Should Know About DTU ?</h4>
+                                <p class="m-b-20">Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear
+                                    claw topping. Chupa...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Darryl Day</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-3.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">Enlink Has The Answer</h4>
+                                <p class="m-b-20">Efficiently unleash cross-media information without cross-media value.
+                                    Quickly maximize ti...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-3.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Marshall Nichols</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-4.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">The Miracle Of Enlink</h4>
+                                <p class="m-b-20">Climb leg rub face on everything give attitude nap all day for under
+                                    the bed. Chase mice a...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-4.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Virgil Gonzales</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-5.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">Enlink Has The Answer</h4>
+                                <p class="m-b-20">European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
+                                    Cutlassfish porbeagle ...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-5.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Nicole Wyne</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-6.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">Seven Clarifications On Hand</h4>
+                                <p class="m-b-20">Let’s see what Chef Dee got that they don’t want us to eat. Let me be
+                                    clear, you have to m...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 3, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-6.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Riley Newman</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 listPost">
+                        <div class="card">
+                            <img class="card-img-top" src="./others/img-7.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="m-t-10">The Modern Rules</h4>
+                                <p class="m-b-20">The palatable sensation we lovingly refer to as The Cheeseburger has a
+                                    distinguished and i...</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 3, 2019</p>
+                                    <a class="text-primary btn btn-sm btn-hover" href="blog-post.html">
+                                        <span>Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center m-t-5">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img src="./others/thumb-7.jpg" alt="">
+                                    </div>
+                                    <div class="m-l-10">
+                                        <span class="font-weight-semibold">Pamela Wanda</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-t-30">
+                    <nav>
+                        <ul class="pagination listPage">
+                            <li class="page-item "><span class="page-link prev">Previous</span></li>
+                            <li class="page-item "><span class="page-link active">1</span></li>
+                            <li class="page-item"><span class="page-link">2</span></li>
+                            <li class="page-item"><span class="page-link">3</span></li>
+                            <li class="page-item "><span class="page-link next">Next</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer kế thừa  nên để tượng trưng thôi nha -->
+    <div class="container-footer">
+        <div class="content-footer">
+            <div class="footer-logo">
+                <img src="../assets/logo2.png" alt="">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="info-support">
+                <h2>Cứu Trợ Động Vật Đà Nẵng</h2>
+                <h3><i class="fa-solid fa-angle-right"></i>Không có hotline, mọi vấn đề vui lòng inbox</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Không có nhà chung, hoạt động theo hệ thống TNV Foster tại
+                    nhà</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Nhận nuôi chó mèo của Hội, vui lòng trả lời câu hỏi phỏng
+                    vấn, đồng ý điều kiện nuôi kín & triệt sản</h3>
+            </div>
+            <div class="connect-group">
+                <h2>Liên kết nhanh</h2>
+                <h3><i class="fa-solid fa-angle-right"></i>Về chúng tôi</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Các case cứu hộ tiêu biểu</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Tìm mái ấm</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Điều kiện nhận nuôi</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Quy trình nhận case</h3>
+            </div>
+        </div>
+        <h2>© 2021 Cứu Trợ Động Vật Đà Nẵng. All Rights Reserved.</h2>
+    </div>
+
+    <script src="./test.js"></script>
+</body>
+
+</html>

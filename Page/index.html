@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <div class="container-menu-two">
+            <div class="menu-one">
+                <div class="logo">
+                </div>
+                <div class="content-service-one">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fa-brands fa-spotify"></i>
+                    <i class="fa-sharp fa-solid fa-cart-shopping"> Spider's Shop </i>
+                </div>
+                <div class="content-login-one">
+                    <div class="group">
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                        <input placeholder="Search" type="search" class="input">
+                    </div>
+                    <a href="">Liên hệ</a>
+                    <a href="../Page/register.html">Đăng ký</a>
+                    <a href="../Page/login.html">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-two">
+            <div class="content-service">
+                <i class="fa-solid fa-house"></i>
+                <a class="a-tc" href="./index.html">Trang chủ</a>
+                <li class="service">Tìm mái ấm
+                    <ul class="ul-service">
+                        <a href="../Page/dog.html">Chó chờ đi chủ</a>
+                        <a href="../Page/cat.html">Mèo chờ đi chủ</a>
+                        <a href="../Page/dkNhan.html">Điều kiện nhận nuôi</a>
+                    </ul>
+                </li>
+                <li class="service">Cứu hộ
+                    <ul class="ul-service">
+                        <a href="../content-menu/CassRescue.html">Các case cứu hộ tiêu biểu</a>
+                        <a href="../content-menu/rescue.html">Quy tắc cứu hộ</a>
+                        <a href="../content-menu/quyTrinhCass.html">Quy tắc nhận case</a>
+                    </ul>
+                </li>
+                <li class="store">Kiến thức
+                    <ul class="ul-store">
+                        <a href="../Page/tuyenTruyen.html">Tuyên truyền</a>
+                        <a href="../Page/thuYcoBan.htm">Thú y cơ bản</a>
+                    </ul>
+                </li>
+                <li class="store">Hoạt động
+                    <ul class="ul-store">
+                        <a href="../content-menu/hoatDong.html">Sự kiện đã tổ chức</a>
+                        <a href="../content-menu/suKien.html">Sự kiện cùng đồng hành</a>
+                    </ul>
+                </li>
+                <li class="store">Ủng hộ và gây quỷ
+                    <ul class="ul-store lastStore">
+                        <a href="../Page/ungHo.html">Sản phẩm gây quỷ</a>
+                        <a href="#/">Danh sách ủng hộ</a>
+                    </ul>
+                </li>
+                <li class="store">Cộng đồng
+                    <!-- <ul class="ul-store lastStore">
+                        <a href="../Page/ungHo.html">Sản phẩm gây quỷ</a>
+                        <a href="#/">Danh sách ủng hộ</a>
+                    </ul> -->
+                </li>
+            </div>
+        </div>
+    </header>
+    <!-- Home-1 -->
+    <div class="container-home-page">
+        <div class="container-slide-page">
+            <i onclick="plusSlides(-1)" class="fa-solid fa-caret-left btn-directional"></i>
+            <div class="slide-background">
+                <div class="images-slide-background active">
+                    <img src="../assets/bg-1.jpg" alt="">
+                    <div class="info-images">
+                        <h3>Đăng ký làm tình nguyện viện</h3>
+                        <button class="btn-images">
+                            Đọc thêm
+                        </button>
+                    </div>
+                </div>
+                <div class="images-slide-background ">
+                    <img src="../assets/bg2.jpg" alt="">
+                    <div class="info-images">
+                        <h3>Hãy nhận nuôi</h3>
+                        <button class="btn-images">
+                            Đọc thêm
+                        </button>
+                    </div>
+                </div>
+                <div class="images-slide-background ">
+                    <img src="../assets/bg3.jpg" alt="">
+                    <div class="info-images">
+                        <h3>Chương trình gây quỷ</h3>
+                        <button class="btn-images">
+                            Đọc thêm
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <i onclick="plusSlides(1)" class="fa-solid fa-caret-right btn-directional"></i>
+        </div>
+    </div>
+    <!-- Home-2 -->
+    <div class="container-about-me">
+        <img src="../assets/11647055011100.png">
+        <div class="about-info">
+            <h4>Về chúng tôi</h4>
+            <h3>HỘI CỨU TRỢ ĐỘNG VẬT ĐÀ NẴNG</h3>
+            <div class="content-about">
+                <span>
+                    Hội Cứu Trợ Động Vật Đà Nẵng được hình thành từ 01/2013, đến nay đã gần một thập kỷ.
+                </span>
+                <span>
+                    Khởi đầu từ một nhóm nhỏ các bạn trẻ với tình yêu thương động vật, hoạt động tự phát và nhỏ lẻ. Trải
+                    qua
+                    nhiều thăng trầm, Hội Cứu Trợ Động Vật Đà Nẵng đã không ngừng cố gắng vươn lên, tự hoàn thiện tổ
+                    chức.
+                </span>
+                <span>
+                    Giờ đây chúng tôi tự hào là một trong những nhóm thiện nguyện theo đuổi thực hiện phúc lợi động vật
+                    hàng
+                    đầu miền Trung Việt Nam. Có thể nói, Hội là một tổ chức được vận hành bài bản, với hơn 100 tình
+                    nguyện
+                    viên chia làm nhiều nhóm với chức năng hoạt động độc lập, nghiêm túc và chuyên sâu.
+                </span>
+            </div>
+            <div class="about-vision">
+                <b>Tầm nhìn</b>
+                <label>
+                    Giúp đỡ cứu trợ chó mèo bất hạnh có một cuộc sống tốt hơn, nâng tầm nhận thức phúc lợi động vật
+                    cho chủ nuôi chó mèo.
+                </label>
+            </div>
+            <div class="about-mission">
+                <b>Sứ mệnh</b>
+                <label>
+                    Sẵn sàng là ngọn cờ dẫn đầu, lan tỏa tinh thần giúp đỡ động vật, cổ vũ – hỗ trợ các nhóm nhỏ hơn
+                    cùng phát triển và đi đúng hướng trên con đường cứu trợ chó mèo!
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- home-3 -->
+    <div class="container-home-three">
+        <div class="content-support">
+            <a href="">
+                <img src="../assets/img-support.png" alt="">
+            </a>
+            <h2>Ủng hộ - Gây quỷ</h2>
+        </div>
+        <div class="content-support">
+            <a href="">
+                <img src="../assets/img-search.png" alt="">
+            </a>
+            <h2>Tìm chủ - Nhận nuôi</h2>
+        </div>
+        <div class="content-support">
+            <a href="">
+                <img src="../assets/img-case.png" alt="">
+            </a>
+            <h2>các case - cứu hộ</h2>
+        </div>
+    </div>
+    <!-- Home-4 -->
+    <div class="container-home-four">
+        <div class="item-home items">
+            <h3>Thú cưng</h3>
+            <h2>Tìm mái ấm</h2>
+            <button>Xem thêm<i class="fa-solid fa-paw"></i></button>
+        </div>
+        <div class="item-home">
+            <p>ADOPTED</p>
+            <div class="item-img">
+                <img src="../assets/items1.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <h2>Sóc</h2>
+                <h3>Mèo lai</h3>
+                <div class="info-item">
+                    <span class="gt"><i class="fa-solid fa-mars-and-venus"></i>Giới tính:<b>Đực</b></span>
+                    <span class="dt"><i class="fa-solid fa-cake-candles"></i>Độ tuổi:<b>Trẻ</b></span>
+                    <span class="ts"><i class="fa-solid fa-syringe"></i>Triệt sản:<b>Rồi</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="item-home">
+            <p>ADOPTED</p>
+            <div class="item-img">
+                <img src="../assets/items2.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <h2>Tóc</h2>
+                <h3>Mèo ta</h3>
+                <div class="info-item">
+                    <span class="gt"><i class="fa-solid fa-mars-and-venus"></i>Giới tính:<b>Đực</b></span>
+                    <span class="dt"><i class="fa-solid fa-cake-candles"></i>Độ tuổi:<b>Trẻ</b></span>
+                    <span class="ts"><i class="fa-solid fa-syringe"></i>Triệt sản:<b>Chưa</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="item-home">
+            <p>ADOPTED</p>
+            <div class="item-img">
+                <img src="../assets/items4.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <h2>MeNo</h2>
+                <h3>Mèo ta</h3>
+                <div class="info-item">
+                    <span class="gt"><i class="fa-solid fa-mars-and-venus"></i>Giới tính:<b>Đực</b></span>
+                    <span class="dt"><i class="fa-solid fa-cake-candles"></i>Độ tuổi:<b>Trẻ</b></span>
+                    <span class="ts"><i class="fa-solid fa-syringe"></i>Triệt sản:<b>Chưa</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="item-home">
+            <p>ADOPTED</p>
+            <div class="item-img">
+                <img src="../assets/items5.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <h2>tùng</h2>
+                <h3>Mèo ta</h3>
+                <div class="info-item">
+                    <span class="gt"><i class="fa-solid fa-mars-and-venus"></i>Giới tính:<b>Đực</b></span>
+                    <span class="dt"><i class="fa-solid fa-cake-candles"></i>Độ tuổi:<b>Trẻ</b></span>
+                    <span class="ts"><i class="fa-solid fa-syringe"></i>Triệt sản:<b>Rồi</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="item-home">
+            <p>ADOPTED</p>
+            <div class="item-img">
+                <img src="../assets/items6.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <h2>miêu miêu</h2>
+                <h3>Mèo ta</h3>
+                <div class="info-item">
+                    <span class="gt"><i class="fa-solid fa-mars-and-venus"></i>Giới tính:<b>Đực</b></span>
+                    <span class="dt"><i class="fa-solid fa-cake-candles"></i>Độ tuổi:<b>Trẻ</b></span>
+                    <span class="ts"><i class="fa-solid fa-syringe"></i>Triệt sản:<b>Chưa</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="item-home">
+            <p>ADOPTED</p>
+            <div class="item-img">
+                <img src="../assets/items7.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <h2>sáo - pháo</h2>
+                <h3>Mèo lai</h3>
+                <div class="info-item">
+                    <span class="gt"><i class="fa-solid fa-mars-and-venus"></i>Giới tính:<b>Đực</b></span>
+                    <span class="dt"><i class="fa-solid fa-cake-candles"></i>Độ tuổi:<b>Trẻ</b></span>
+                    <span class="ts"><i class="fa-solid fa-syringe"></i>Triệt sản:<b>Rồi</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="item-home">
+            <p>ADOPTED</p>
+            <div class="item-img">
+                <img src="../assets/items8.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <h2>nấm</h2>
+                <h3>Mèo lai</h3>
+                <div class="info-item">
+                    <span class="gt"><i class="fa-solid fa-mars-and-venus"></i>Giới tính:<b>Đực</b></span>
+                    <span class="dt"><i class="fa-solid fa-cake-candles"></i>Độ tuổi:<b>Trẻ</b></span>
+                    <span class="ts"><i class="fa-solid fa-syringe"></i>Triệt sản:<b>Rồi</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="item-home">
+            <p>ADOPTED</p>
+            <div class="item-img">
+                <img src="../assets/items9.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <h2>coca</h2>
+                <h3>Mèo lai</h3>
+                <div class="info-item">
+                    <span class="gt"><i class="fa-solid fa-mars-and-venus"></i>Giới tính:<b>Đực</b></span>
+                    <span class="dt"><i class="fa-solid fa-cake-candles"></i>Độ tuổi:<b>Trẻ</b></span>
+                    <span class="ts"><i class="fa-solid fa-syringe"></i>Triệt sản:<b>Rồi</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hoome-5 -->
+    <div class="container-home-five">
+        <div class="content-home-five">
+            <img src="../assets/icon1.png" alt="">
+            <h1>1000<i class="fa-solid fa-plus"></i></h1>
+            <h2>các trường hợp đã cứu hộ</h2>
+        </div>
+        <div class="content-home-five">
+            <img src="../assets/icon2.png" alt="">
+            <h1>680<i class="fa-solid fa-plus"></i></h1>
+            <h2>các trường hợp đã đi chủ</h2>
+        </div>
+        <div class="content-home-five">
+            <img src="../assets/icon3.png" alt="">
+            <h1>40<i class="fa-solid fa-plus"></i></h1>
+            <h2>các trường hợp đã tìm chủ</h2>
+        </div>
+        <div class="content-home-five">
+            <img src="../assets/icon4.png" alt="">
+            <h1>20<i class="fa-solid fa-plus"></i></h1>
+            <h2>các trường hợp đang điều trị</h2>
+        </div>
+    </div>
+    <!-- Home-6 -->
+    <div class="container-home-six">
+        <div class="title-home-six">
+            <h3>Kiến thức</h3>
+            <h2>Tìm hiểu thú cưng</h2>
+            <h4>Chia sẻ, tuyên truyền những kiến thức về thú cưng được nuôi trong gia đình, hy vọng sẽ đem đến những
+                thông
+                tin bổ ích cho mọi người.
+            </h4>
+        </div>
+        <div class="content-slide-six">
+            <div class="btn-slide-six">
+                <button class="demo active-gray" onclick="currentDiv(1)">Tuyên truyền</button>
+                <button class="demo" onclick="currentDiv(2)">Thú y cơ bản</button>
+            </div>
+            <div class="title-slide-six">
+                <div class="title-left">
+                    <div class="img-title-six">
+                        <img src="../assets/img-left-6.jpg" alt="">
+                        <div class="days-title">
+                            <span>05</span>
+                            <label>03 - 2023</label>
+                        </div>
+                    </div>
+                    <h2>CHÓ MÈO HOANG NƯƠNG NHỜ CỬA PHẬT, VẪN LÀ CHUYỆN NÃO NỀ</h2>
+                    <h4>
+                        ​​​​​​​Thi thoảng chúng ta vẫn thấy trong một ngôi chùa sẽ có những con chó, con mèo nằm, ngồi
+                        thẫn...
+                    </h4>
+                </div>
+                <div class="title-right">
+                    <div class="items-title-right">
+                        <img src="../assets/img-right-6-1.jpg" alt="">
+                        <div class="message-right">
+                            <h2>chúng tôi chọn cách "cứu sống"</h2>
+                            <h4>
+                                Việc giảm bớt sự chịu đựng ở những động vật có tri giác sẽ tạo ra nhiều lợi ích không
+                                chỉ cho bản...
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="items-title-right">
+                        <img src="../assets/img-right-6-2.jpg" alt="">
+                        <div class="message-right">
+                            <h2>Chúng tôi chọn cách "cứu sống"!</h2>
+                            <h4>
+                                Vừa qua, vụ việc một chủ nhà hàng tại TP. HCM đã đánh bả giết nguyên một bầy mèo hoang
+                                hơn chục cá...
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="items-title-right">
+                        <img src="../assets/img-right-6-3.jpg" alt="">
+                        <div class="message-right">
+                            <h2>tại sao phải triệt sản chó mèo và nuôi kính ?</h2>
+                            <h4>
+                                Vừa qua, vụ việc một chủ nhà hàng tại TP. HCM đã đánh bả giết nguyên một bầy mèo hoang
+                                hơn chục cá...
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title-slide-six">
+                <div class="title-left">
+                    <div class="img-title-six">
+                        <img src="../assets/img-left-6.2.jpg" alt="">
+                        <div class="days-title">
+                            <span>06</span>
+                            <label>05 - 2023</label>
+                        </div>
+                    </div>
+                    <h2>ƯU VÀ NHƯỢC ĐIỂM KHI NGỦ CHUNG GIƯỜNG VỚI CHÓ</h2>
+                    <h4>
+                        Nhiều người chủ cho chó ngủ chung giường với họ, nhưng một số người khác lại không cho rằng đó
+                        là...
+                    </h4>
+                </div>
+                <div class="title-right">
+                    <div class="items-title-right">
+                        <img src="../assets/img-right-1.jpg" alt="">
+                        <div class="message-right">
+                            <h2>CHĂM SÓC MÈO MẸ TRƯỚC VÀ SAU SINH</h2>
+                            <h4>
+                                Trong tự nhiên, mèo có khả năng sinh sản độc lập, đặc
+                                tính và bản năng làm mẹ giúp nó có thể tự lo...
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="items-title-right">
+                        <img src="../assets/img-right-2.jpg" alt="">
+                        <div class="message-right">
+                            <h2>BỆNH UỐN VÁN Ở CHÓ</h2>
+                            <h4>
+                                Bệnh uốn ván có thể ảnh hưởng tới sức khỏe của những chú mèo, ngựa hay thậm chí là những
+                                chú chó nếu...
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="items-title-right">
+                        <img src="../assets/img-right-3.jpg" alt="">
+                        <div class="message-right">
+                            <h2>BỆNH UỐN VÁN Ở CHÓ</h2>
+                            <h4>
+                                Khi thú cưng gặp phải trường hợp khẩn cấp, cần làm gì trong trường hợp đó là một điều
+                                rất cần thiết....
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home-7 -->
+    <div class="container-home-seven">
+        <div class="title-home-seven">
+            <h2>Nổi bật</h2>
+            <h1>Các case cứu hộ tiêu biểu</h1>
+            <button>Xem thêm <i class="fa-solid fa-paw"></i></button>
+        </div>
+        <div class="container-slide-seven">
+            <div class="slide-home-seven">
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-1.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>25</h2>
+                            <h3>3 - 2022</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">Yên</h2>
+                    <h3 class="title-seven">
+                        Báo tin nhặt được bé ở đường Yên Bái khoảng 9h30 tối. Bé bị xe tông, báo tin thấy 2 chân bé bị
+                        gãy.
+                        nhà xung quanh không nhận...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-2.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>17</h2>
+                            <h3>4 - 2022</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">Xẹo</h2>
+                    <h3 class="title-seven">
+                        Theo như báo tin nói thì bé rơi từ mái nhà vệ sinh xuống. Bé tầm khoảng 10 ngày tuổi lúc cứu, có
+                        hiện tượng co giật. Các cơn...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-3.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>1</h2>
+                            <h3>3 - 2022</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">Tùng - Dương - Hương - Tràm</h2>
+                    <h3 class="title-seven">
+                        Bốn mèo sữa chưa mở mắt bị bỏ bịch nilon ném ra đường. Các bé có giòi khắp người, đặc biệt rất
+                        nhiều
+                        ổ giòi trong hậu môn và...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-4.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>16</h2>
+                            <h3>3 - 2022</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">Mây</h2>
+                    <h3 class="title-seven">
+                        Đứa nhỏ này lang thang gần chợ Lệ Trạch ở Hoà Tiến không biết đã bao lâu. Nấm, đập trực diện vào
+                        mắt
+                        người cứu hộ là thân...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-5.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>8</h2>
+                            <h3>12 - 2021</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">Nế</h2>
+                    <h3 class="title-seven">
+                        Tiếp nhận bé trong tình trạng phân lỏng, bụng căng to. Phần vùng bẹn và hậu môn viêm sưng tấy.
+                        Hai
+                        chân sau lết một thời gian...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-7.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>17</h2>
+                            <h3>9 - 2021</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">May</h2>
+                    <h3 class="title-seven">
+                        Bé chó nhỏ tầm 3 tháng tuổi bị đi lạc vào một ngôi chùa trong tình trạng miệng bị hoại tử nặng.
+                        Rất
+                        may là bé gặp được báo...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-8.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>12</h2>
+                            <h3>5 - 2022</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">Ti</h2>
+                    <h3 class="title-seven">
+                        Ti được trông thấy khi đang lang thang trên đường với khối u lớn đã lở loét ra nơi bụng, lúc
+                        nhúc giòi làm tổ. Lập tức Ti...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-9.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>7</h2>
+                            <h3>4 - 2021</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">Nế</h2>
+                    <h3 class="title-seven">
+                        Tình nguyện viên tìm thấy Vani bị xe tông, gãy xương chậu. Sau khi đưa qua phòng khám kết luận
+                        Vani bị gãy xương chậu khá...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+                <div class="content-slide-seven">
+                    <div class="img-slide-seven">
+                        <img src="../assets/seven-6.jpg" alt="">
+                        <div class="days-seven">
+                            <h2>7</h2>
+                            <h3>4 - 2021</h3>
+                        </div>
+                    </div>
+                    <h2 class="name-seven">Tom</h2>
+                    <h3 class="title-seven">
+                        Tình nguyện viên bắt gặp Tom phía sau dãy trọ, hỏi những người xung quanh thì được biết nó đã
+                        lang thang ở đây khá lâu. Ước...
+                    </h3>
+                    <button>Chi tiết<i class="fa-solid fa-paw paw-seven"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="dots-slide-seven">
+            <span class="dots-seven active" onclick="currentSlides(1)"></span>
+            <span class="dots-seven" onclick="currentSlides(2)"></span>
+            <span class="dots-seven" onclick="currentSlides(3)"></span>
+        </div>
+    </div>
+    <!-- Home-8 -->
+    <div class="container-coment-donate">
+        <h2>Góp ý cho hội</h2>
+        <h3>Bạn có ý kiến góp ý cho Hội để xây dựng, vận hành và phát triển? Mời bạn đóng góp ý kiến tại đây:</h3>
+        <div class="content-coment">
+            <div class="left-coment">
+                <img src="../assets/donate1.png" alt="">
+                <div class="form-coment">
+                    <div class="form-input">
+                        <label for="name">Họ và tên</label>
+                        <input name="name" type="text" class="input-coment">
+                    </div>
+                    <div class="form-input">
+                        <label for="phone">Số điện thoại</label>
+                        <input name="phone" type="tel" class="input-coment" placeholder="Ex: +8490 123 456">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input name="email" type="email" class="input-coment" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-input input-text">
+                        <label for="message">Tin nhắn</label>
+                        <textarea name="message" class="textarea" placeholder="..."></textarea>
+                    </div>
+                    <button>Gửi</button>
+                </div>
+            </div>
+            <div class="right-coment">
+                <h2>Các kênh nhận quyên góp</h2>
+                <img src="../assets/donate3.png" alt="">
+                <div class="content-donate">
+                    <div class="items-donate">
+                        <img src="../assets/tech.png" alt="">
+                        <div class="info-items">
+                            <span>Nguyễn Thị Như Ý</span>
+                            <span>Nguyễn Thị Như Ý</span>
+                        </div>
+                    </div>
+                    <div class="items-donate">
+                        <img src="../assets/qr.png" alt="">
+                        <div class="info-items">
+                            <span>Momo QR code</span>
+                            <span>Nguyễn Thị Như Ý</span>
+                        </div>
+                    </div>
+                    <div class="items-donate">
+                        <img src="../assets/pay.png" alt="">
+                        <div class="info-items">
+                            <span>Da Nang Animal Rescue</span>
+                            <span>cuutrodongvatdanang@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fotter -->
+    <div class="container-footer">
+        <div class="content-footer">
+            <div class="footer-logo">
+                <img src="../assets/logo2.png" alt="">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="info-support">
+                <h2>Cứu Trợ Động Vật Đà Nẵng</h2>
+                <h3><i class="fa-solid fa-angle-right"></i>Không có hotline, mọi vấn đề vui lòng inbox</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Không có nhà chung, hoạt động theo hệ thống TNV Foster tại
+                    nhà</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Nhận nuôi chó mèo của Hội, vui lòng trả lời câu hỏi phỏng
+                    vấn, đồng ý điều kiện nuôi kín & triệt sản</h3>
+            </div>
+            <div class="connect-group">
+                <h2>Liên kết nhanh</h2>
+                <h3><i class="fa-solid fa-angle-right"></i>Về chúng tôi</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Các case cứu hộ tiêu biểu</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Tìm mái ấm</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Điều kiện nhận nuôi</h3>
+                <h3><i class="fa-solid fa-angle-right"></i>Quy trình nhận case</h3>
+            </div>
+        </div>
+        <h2>© 2021 Cứu Trợ Động Vật Đà Nẵng. All Rights Reserved.</h2>
+    </div>
+    <!-- auto-slide -->
+    <div class="slide-facebook">
+        <img class="img-on-bot" src="../assets/ontop.png" alt=""><i class="fa-solid fa-chevron-up"></i>
+        <div class="fix-bot">
+            <img class="auto-slide" src="../assets/tiktok.png" alt="">
+            <img class="auto-slide" src="../assets/fb.png" alt="">
+            <img class="auto-slide" src="../assets/gmail.png" alt="">
+            <img class="auto-slide" src="../assets/message.png" alt="">
+        </div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
