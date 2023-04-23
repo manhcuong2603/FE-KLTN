@@ -156,6 +156,7 @@ input:hover {
     height: 1rem;
 }
 
+
 /*  */
 .menu-two {
     background-color: #f5f5f5;
@@ -2443,7 +2444,7 @@ input:hover {
 
     .content-service {
         position: fixed;
-        width: 30%;
+        width: 40%;
         z-index: 10;
         background-color: #f2f2f2;
         height: 100vh;
@@ -2471,9 +2472,9 @@ input:hover {
     }
 
     .logo {
-        left: 4%;
-        width: 95px;
-        height: 32px;
+        left: 2%;
+        width: 85px;
+        height: 31px;
     }
 
     .content-service-one {
@@ -2486,14 +2487,36 @@ input:hover {
     }
 
     .content-login-one .group {
-        max-width: 130px;
+        max-width: 50px;
+    }
+
+    /* .input:hover .input {
+        position: absolute;
+        width: 200px;
+    } */
+
+    .content-login-one .group:hover .input {
+        width: 170px;
+    }
+
+    .content-login-one .input:focus {
+        width: 170px;
+    }
+
+    /* .input:focus,
+    input:hover */
+    .input {
+        padding: 0;
+        padding-left: 2.5rem;
+        height: 36px;
     }
 
     .content-login-one a {
-        padding: 6px 0px;
-        width: 100px;
+        padding: 8px 0px;
+        width: 85px;
         font-size: 13px;
         display: flex;
+        margin-left: 0;
         justify-content: center;
         align-items: center;
     }
@@ -2517,20 +2540,29 @@ input:hover {
 
     /* home2 */
     .container-about-me {
-        width: 95%;
-        height: 738px;
+        max-width: 95%;
+        height: auto;
+        padding: 0;
     }
 
     .container-about-me img {
         display: none;
     }
 
+    .about-info {
+        min-width: 300px;
+    }
+
     .about-info h3 {
-        font-size: 30px;
+        font-size: 27px;
+        min-width: 329px;
+    }
+
+    .content-about {
+        min-width: 300px;
     }
 
     .content-about span {
-        width: 400px;
         margin: 20px 0;
         font-size: 17px;
     }
@@ -2538,11 +2570,6 @@ input:hover {
     .about-vision label,
     .about-mission {
         font-size: 16px;
-    }
-
-    .about-vision,
-    .about-mission {
-        width: 400px;
     }
 
     .about-vision b,
@@ -2560,7 +2587,7 @@ input:hover {
     .content-support {
         height: 385px;
         position: relative;
-        margin: 0 5px;
+        margin: 0;
     }
 
     .content-support a {
@@ -2609,6 +2636,7 @@ input:hover {
     .container-items-four {
         grid-template-columns: repeat(2, 208px);
         grid-template-rows: repeat(4, 349px);
+        gap: 5px;
     }
 
     .content-item h2 {
@@ -2637,8 +2665,8 @@ input:hover {
     }
 
     .content-home-five h1 {
-        font-size: 40px;
-        bottom: 32%;
+        font-size: 37px;
+        bottom: 33%;
     }
 
     .content-home-five h1 i {
@@ -2646,9 +2674,9 @@ input:hover {
     }
 
     .content-home-five h2 {
-        font-size: 13px;
-        bottom: 18%;
-        margin-left: 12px;
+        font-size: 12px;
+        bottom: 3%;
+        margin-left: 20px;
     }
 
     /* home6 */
@@ -2667,8 +2695,8 @@ input:hover {
 
     .title-home-six h4 {
         width: auto;
-        font-size: 17px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 22px;
     }
 
     .content-slide-six {
@@ -2689,7 +2717,7 @@ input:hover {
         height: 45%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .title-slide-six .title-left {
@@ -2736,7 +2764,7 @@ input:hover {
 
     .items-title-right {
         margin: 0;
-        padding: 10px 10px 10px 0;
+        padding: 10px 10px 10px 15px;
 
     }
 
@@ -2745,7 +2773,7 @@ input:hover {
     }
 
     .items-title-right .message-right {
-        width: 220px;
+        width: 335px;
         padding: 0;
         margin-left: 10px
     }
@@ -2755,7 +2783,7 @@ input:hover {
     }
 
     .message-right h2 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .message-right h4 {
@@ -2780,6 +2808,7 @@ input:hover {
         width: 116px;
         line-height: 36px;
         right: -2%;
+        bottom: 50px;
     }
 
     .slide-home-seven {
@@ -2813,7 +2842,7 @@ input:hover {
     }
 
     .content-slide-seven button {
-        left: -28%;
+        margin-left: 153px;
         bottom: -7%;
         font-size: 17px;
         position: relative;
@@ -2846,6 +2875,8 @@ input:hover {
 
     .content-footer {
         width: 95%;
+        flex-direction: column;
+        align-items: center;
     }
 
     .content-footer .connect-group {
@@ -2853,7 +2884,12 @@ input:hover {
     }
 
     .content-footer .footer-logo {
-        width: 450px;
+        margin-top: 37px;
+        width: 325px;
+    }
+
+    .content-footer .info-support {
+        width: 325px;
     }
 
     .content-footer .footer-logo img {
@@ -2863,5 +2899,13 @@ input:hover {
 
     .content-footer .footer-logo i {
         margin-left: 8px;
+    }
+
+    .container-footer h2 {
+        font-size: 14px;
+    }
+
+    .connect-group {
+        display: none;
     }
 }
