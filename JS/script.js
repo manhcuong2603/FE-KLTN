@@ -100,7 +100,7 @@ function showSlides3(n) {
         slideIndex3 = 1;
     }
     if (n < 1) {
-        slideIndex3 = Math.ceil(slides3.length / 3);
+        slideIndex3 = Math.ceil(slides3.length / 2);
     }
     for (i = 0; i < slides3.length; i++) {
         slides3[i].style.display = "none";
