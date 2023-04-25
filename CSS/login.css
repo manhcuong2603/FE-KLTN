@@ -119,3 +119,31 @@ body {
 .login-Input .account a:hover {
     color: #47b1f7;
 }
+
+@media(min-width: 850px) and (max-width: 1200px) {
+    .container-login .login {
+        width: 80%;
+    }
+
+    .login-Input .Input input {
+        width: 255px;
+    }
+}
+
+@media(min-width: 400px) and (max-width: 850px) {
+    .login .imgLogin {
+        display: none;
+    }
+
+    .login .login-Input {
+        width: 100%;
+    }
+
+    .container-login .login {
+        width: 80%;
+    }
+
+    .login-Input .Input input {
+        width: 255px;
+    }
+}

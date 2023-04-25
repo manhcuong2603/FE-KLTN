@@ -54,6 +54,8 @@ body {
 
 .forgot .forgot-Input .Input {
     display: flex;
+    position: absolute;
+    bottom: 40%;
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
@@ -83,9 +85,8 @@ body {
 }
 
 .forgot-Input .Input button {
-    margin-top: 15px;
     border-radius: 50px;
-    width: 330px;
+    width: 130px;
     padding: 8px 15px;
     height: 40px;
     background-color: #2f59cda4;
@@ -110,50 +111,12 @@ body {
     margin-left: 10px;
 }
 
-.forgot .forgot-Input .btn-gg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid rgb(101, 99, 99);
-}
 
-.forgot .forgot-Input .btn-gg button {
-    border-radius: 50px;
-    width: 330px;
-    padding: 8px 15px;
-    height: 40px;
-    background-color: #3f497fe2;
-    color: #ffff;
-    border: none;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 15px;
-    transition: all 0.5s;
-}
-
-.forgot-Input .btn-gg button i {
-    margin-right: 10px;
-}
-
-.forgot .forgot-Input .btn-gg button:hover {
-    background-color: #3F497F;
-}
-
-.forgot .forgot-Input .btn-gg button:nth-child(1) {
-    margin-bottom: 10px;
-    background-color: #f94c29e8;
-}
-
-.forgot .forgot-Input .btn-gg button:nth-child(1):hover {
-    background-color: #fb411c;
-}
 
 .forgot-Input .account {
     display: flex;
+    position: absolute;
+    bottom: 20%;
     flex-direction: column;
     align-items: center;
 }
@@ -166,4 +129,43 @@ body {
 
 .forgot-Input .account a:hover {
     color: #47b1f7;
+}
+
+@media(min-width: 850px) and (max-width: 1200px) {
+    .container-register .register {
+        width: 80%;
+    }
+
+    .register-Input .Input input {
+        width: 255px;
+    }
+}
+
+@media(min-width: 374px) and (max-width: 850px) {
+    .forgot .imgRegister {
+        display: none;
+    }
+
+    .forgot .forgot-Input {
+        width: 100%;
+        position: relative;
+    }
+
+    .container-register .register {
+        width: 80%;
+    }
+
+    .forgot-Input .Input {
+        position: absolute;
+        top: 0;
+    }
+
+    .forgot-Input .Input input {
+        max-width: 255px;
+    }
+
+    .account {
+        position: absolute;
+        bottom: 5%;
+    }
 }

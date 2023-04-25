@@ -112,3 +112,42 @@ body {
 .register-Input .account a:hover {
     color: #47b1f7;
 }
+
+@media(min-width: 850px) and (max-width: 1200px) {
+    .container-register .register {
+        width: 80%;
+    }
+
+    .register-Input .Input input {
+        width: 255px;
+    }
+}
+
+@media(min-width: 374px) and (max-width: 850px) {
+    .register .imgRegister {
+        display: none;
+    }
+
+    .register .register-Input {
+        width: 100%;
+        position: relative;
+    }
+
+    .container-register .register {
+        width: 80%;
+    }
+
+    .register-Input .Input {
+        position: absolute;
+        top: 0;
+    }
+
+    .register-Input .Input input {
+        max-width: 255px;
+    }
+
+    .account {
+        position: absolute;
+        bottom: 5%;
+    }
+}

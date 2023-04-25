@@ -141,7 +141,7 @@ header {
     border: 1px solid #c7c7c7;
     height: 40px;
     display: flex;
-    padding: 0 5px;
+    padding: 0 15px;
     cursor: pointer;
     max-width: 110px;
     border-radius: 21px;
@@ -446,7 +446,7 @@ input:hover {
     border-radius: 0 0 4px 4px;
 }
 
-.profile-menu .profile-menu-link:nth-child(5):hover .subProfile {
+.profile-menu .profile-menu-link:nth-child(3):hover .subProfile {
     display: block;
     transition: all 1s ease;
 }
@@ -1041,6 +1041,7 @@ input:hover {
 
 
 
+
 @media screen and (max-width: 1210px) {
     .overlay.active {
         z-index: 3;
@@ -1075,7 +1076,6 @@ input:hover {
     .profile-menu {
         padding-left: 0;
         width: 100%;
-        overflow: auto;
         justify-content: center;
     }
 
@@ -1083,15 +1083,12 @@ input:hover {
         padding: 16px;
         font-size: 15px;
     }
-}
 
-@media screen and (max-width: 480px) {
-
-    .profile-menu-link:nth-last-child(1),
-    .profile-menu-link:nth-last-child(2) {
-        display: none;
+    .profile-menu-link>ul {
+        margin: 14px 0 0 -16px;
     }
 }
+
 
 ::-webkit-scrollbar {
     width: 10px;

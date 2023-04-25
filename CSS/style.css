@@ -87,7 +87,7 @@ header {
     justify-content: flex-end;
 }
 
-.content-login-one a {
+.content-login-one>a {
     text-decoration: none;
     color: #000;
     font-size: 16px;

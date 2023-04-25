@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang cá nhân</title>
     <link rel="stylesheet" href="../CSS/infoUser.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -58,40 +59,31 @@
             </div>
         </div>
         <div class="menu-two">
-
+            <input type="checkbox" id="menu">
+            <label for="menu"><i class="fa-solid fa-bars"></i></label>
             <div class="content-service">
+                <label class="labelX" for="menu"><i class="fa-solid fa-xmark"></i></label>
                 <i class="fa-solid fa-house"></i>
-                <a class="a-tc" href="./index.html">Trang chủ</a>
-                <li class="service">Tìm mái ấm
-                    <ul class="ul-service">
-                        <a href="../content-menu/dog.html">Chó chờ đi chủ</a>
-                        <a href="../content-menu/cat.html">Mèo chờ đi chủ</a>
-                        <a href="">Điều kiện nhận nuôi</a>
-                    </ul>
+                <li class="service">
+                    <a href="">Trang chủ</a>
                 </li>
-                <li class="service">Cứu hộ
-                    <ul class="ul-service">
-                        <a href="../content-menu/CassRescue.html">Các case cứu hộ tiêu biểu</a>
-                        <a href="../content-menu/rescue.html">Quy tắc cứu hộ</a>
-                        <a href="../content-menu/quyTrinhCass.html">Quy tắc nhận case</a>
-                    </ul>
+                <li class="service">
+                    <a href="">Tìm mái ấm</a>
                 </li>
-                <li class="store">Kiến thức
-                    <ul class="ul-store">
-                        <a href="../content-menu/tuyenTruyen.html">Tuyên truyền</a>
-                        <a href="../content-menu/thuYcoBan.htm">Thú y cơ bản</a>
-                    </ul>
+                <li class="service">
+                    <a href="">Cứu hộ</a>
                 </li>
-                <li class="store">Hoạt động
-                    <ul class="ul-store">
-                        <a href="../content-menu/hoatDong.html">Sự kiện đã tổ chức</a>
-                        <a href="../content-menu/suKien.html">Sự kiện cùng đồng hành</a>
-                    </ul>
+                <li class="service">
+                    <a href="">Kiến thức</a>
                 </li>
-                <li class="store">Ủng hộ và gây quỷ
-                    <ul class="ul-store">
-                        <a href="../content-menu/ungHo.html">Sản phẩm gây quỷ</a>
-                    </ul>
+                <li class="service">
+                    <a href="">Hoạt động</a>
+                </li>
+                <li class="service">
+                    <a href="">Ủng hộ và gây quỷ</a>
+                </li>
+                <li class="service">
+                    <a href="">Cộng đồng</a>
                 </li>
             </div>
         </div>
@@ -100,17 +92,13 @@
         <div class="main-container">
             <div class="profile">
                 <div class="profile-avatar">
-                    <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt=""
-                        class="profile-img">
+                    <img src="../assets/ty8.jpg" alt="" class="profile-img">
                     <div class="profile-name">Quan Ha</div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-                    alt="" class="profile-cover">
+                <img src="../assets/bg-1.jpg" alt="" class="profile-cover">
                 <div class="profile-menu">
                     <a class="profile-menu-link active">Bài viết</a>
                     <a class="profile-menu-link">Giới thiệu</a>
-                    <a class="profile-menu-link">Bạn bè</a>
-                    <a class="profile-menu-link">Ảnh</a>
                     <a class="profile-menu-link linkSub">Xem thêm<i class="fa-solid fa-angle-down"></i>
                         <ul class="subProfile">
                             <li>Chỉnh sửa</li>
@@ -154,14 +142,13 @@
                     </div>
                     <div class="event box">
                         <div class="event-wrapper">
-                            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-                                class="event-img" />
+                            <img src="../assets/sk4.jpg" class="event-img" />
                             <div class="event-date">
-                                <div class="event-month">Jan</div>
-                                <div class="event-day">01</div>
+                                <div class="event-month">10</div>
+                                <div class="event-day">09</div>
                             </div>
-                            <div class="event-title">Winter Wonderland</div>
-                            <div class="event-subtitle">01st Jan, 2019 07:00AM</div>
+                            <div class="event-title">Cùng nhau giúp đỡ</div>
+                            <div class="event-subtitle">7h, 09/10/2022</div>
                         </div>
                     </div>
                     <div class="pages box">
@@ -170,19 +157,16 @@
                             <button class="intro-menu"></button>
                         </div>
                         <div class="user">
-                            <img src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0f"
-                                alt="" class="user-img">
-                            <div class="username">Chandelio</div>
+                            <img src="../assets/cat8.jpg" alt="" class="user-img">
+                            <div class="username">Yêu mèo</div>
                         </div>
                         <div class="user">
-                            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f"
-                                alt="" class="user-img">
-                            <div class="username">Janet Jolie</div>
+                            <img src="../assets/cat5.jpg" alt="" class="user-img">
+                            <div class="username">Văn Nam</div>
                         </div>
                         <div class="user">
-                            <img src="https://images.unsplash.com/photo-1546539782-6fc531453083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
-                                alt="" class="user-img">
-                            <div class="username">Patrick Watsons</div>
+                            <img src="../assets/cat3.jpg" alt="" class="user-img">
+                            <div class="username">Thùy Dung</div>
                         </div>
                     </div>
                 </div>
