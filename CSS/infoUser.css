@@ -440,7 +440,7 @@ input:hover {
     position: absolute;
     bottom: 0;
     padding-left: 200px;
-    background: #151728;
+    /* background: #151728; */
     width: 87%;
     display: flex;
     border-radius: 0 0 4px 4px;
@@ -454,7 +454,7 @@ input:hover {
 .profile-menu-link {
     padding: 20px 16px;
     position: relative;
-    color: #5c5e6e;
+    color: #fff;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -488,8 +488,8 @@ input:hover {
 
 .profile-menu-link.active,
 .profile-menu-link:hover {
-    color: #fff;
-    background-color: #1b1d2e;
+    color: #3f95ec;
+    /* background-color: #1b1d2e; */
     border-bottom: 3px solid #1488fa;
 }
 
@@ -596,7 +596,7 @@ input:hover {
     margin-top: 14px;
 }
 
-.info-item a {
+.info-item>a {
     margin-left: 6px;
     color: #1771d6;
     text-decoration: none;

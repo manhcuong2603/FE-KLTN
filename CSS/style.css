@@ -98,7 +98,7 @@ header {
     padding: 10px 15px;
 }
 
-.content-login-one a:nth-child(3) {
+.content-login-one>a:nth-child(3) {
     background-color: #5cb9ef;
     color: #f2f2f2;
 
@@ -108,8 +108,8 @@ header {
     background-color: #3398d4;
 }
 
-.content-login-one a:nth-child(2):hover,
-.content-login-one a:nth-child(3):hover {
+.content-login-one>a:nth-child(2):hover,
+.content-login-one>a:nth-child(3):hover {
     border: 1px solid #5cb9ef;
 }
 
@@ -886,7 +886,7 @@ input:hover {
 
 .items-title-right {
     display: flex;
-    margin: 27px 0 5px 0;
+    margin: 27px 0px 5px 10px;
     height: 150px;
     cursor: pointer;
 }
@@ -900,9 +900,11 @@ input:hover {
 }
 
 .items-title-right .message-right {
-    width: 300px;
+    max-width: 300px;
     margin-left: 15px;
     padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .message-right h2 {

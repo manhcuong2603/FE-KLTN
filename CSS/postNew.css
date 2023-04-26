@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container-postNew {
+    width: 100%;
+    padding: 20px 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form>label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form>input[type="text"],
+form>input[type="file"],
+form>textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    resize: none;
+}
+
+form>input[type="file"] {
+    border: 1px solid rgb(65, 64, 64) !important;
+    width: 57%;
+    cursor: pointer;
+}
+
+form>input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form>input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form>input[type="file"] {
+    border: none;
+}
+
+form>input[type="file"]:focus {
+    outline: none;
+}
+
+form>input[type="file"]::-webkit-file-upload-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form>input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #45a049;
+}
+
+/* css phần menu đã login */
+.content-login-one .user-login {
+    display: flex;
+    height: 75px;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    z-index: 10;
+    cursor: pointer;
+    justify-content: center;
+}
+
+
+.content-login-one .user-login .userOne {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 3rem;
+    position: absolute;
+}
+
+.content-login-one .user-login:hover .info-user-login {
+    visibility: inherit;
+}
+
+.content-login-one .user-login .info-user-login {
+    position: absolute;
+    margin-top: 16rem;
+    width: 250px;
+    height: 160px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #ffff;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    margin-left: -70px;
+    visibility: hidden;
+}
+
+.content-login-one .content-post {
+    border: 1px solid #c7c7c7;
+    height: 40px;
+    display: flex;
+    padding: 0 15px;
+    cursor: pointer;
+    max-width: 110px;
+    border-radius: 21px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.content-login-one .content-post>i {
+    margin-right: 10px;
+}
+
+.content-login-one .content-post:hover {
+    background-color: #e3e3e3;
+    transition: 0.5s;
+}
+
+.content-login-one .group {
+    display: flex;
+    margin-left: 10px;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+    height: 50px;
+}
+
+.user-login .ctnImg {
+    position: absolute;
+    top: -10px;
+    left: 60%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffff;
+}
+
+.info-user-login.active {
+    display: block;
+}
+
+.info-user-login .nameUser {
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    padding: 10px 5px;
+    margin-left: 55px;
+}
+
+.info-user-login .imgDetail {
+    top: 4% !important;
+    left: 10px;
+    border: none !important;
+}
+
+.info-user-login>span {
+    padding: 5px 60px
+}
+
+.info-user-login>span:nth-child(3) {
+    color: #8f98a9;
+}
+
+
+.info-user-login .detail-user {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 100px;
+}
+
+.info-user-login .detail-user>a {
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #9e9ea7;
+    color: #6e6f71;
+}
+
+.info-user-login .detail-user>a:hover {
+    color: #000;
+}
