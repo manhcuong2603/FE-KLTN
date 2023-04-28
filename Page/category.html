@@ -17,6 +17,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
 		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- phân trang -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.min.js"
+		integrity="sha512-GzbaI5EsNzdEUq6/2XLYpr1y9CUZRIVsUeWTAFgULtQa5jZ3Nug8i0nZKM6jp9NffBCZhymPPQFcF0DK+JkRpw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -96,327 +103,376 @@
 		<div class="page_content">
 			<div class="container">
 				<div class="row row-lg-eq-height">
-
 					<!-- Main Content -->
-
 					<div class="col-lg-9">
 						<div class="main_content">
-
-							<!-- Category -->
-
-							<div class="category">
-								<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-									<div class="section_title">Đừng bỏ lỡ !</div>
-									<!-- <div class="section_tags ml-auto">
-										<ul>
-											<li class="active"><a href="category.html">all</a></li>
-											<li><a href="category.html">style hunter</a></li>
-											<li><a href="category.html">vogue</a></li>
-											<li><a href="category.html">health & fitness</a></li>
-											<li><a href="category.html">travel</a></li>
-										</ul>
-									</div> -->
-									<!-- <div class="section_panel_more">
-										<ul>
-											<li>more
-												<ul>
-													<li><a href="category.html">new look 2018</a></li>
-													<li><a href="category.html">street fashion</a></li>
-													<li><a href="category.html">business</a></li>
-													<li><a href="category.html">recipes</a></li>
-													<li><a href="category.html">sport</a></li>
-													<li><a href="category.html">celebrities</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div> -->
+							<div class="main_tags">
+								<div class="tags_popular">
+									<div class="most_tags">
+										<i class="fa-solid fa-tags"></i>
+										Tìm kiếm nhiều nhất
+									</div>
+									<div class="tags_items">
+										<div class="img_tags">
+											<img src="../assets/cat7.jpg">
+										</div>
+										<div class="title_tags">
+											<h3>Ý tưởng</h3>
+											<span>13 Photos</span>
+										</div>
+										<i class="fa-solid fa-arrow-right"></i>
+									</div>
+									<div class="tags_items">
+										<div class="img_tags">
+											<img src="../assets/cat3.jpg">
+										</div>
+										<div class="title_tags">
+											<h3>Kinh nghiệm</h3>
+											<span>10 Photos</span>
+										</div>
+										<i class="fa-solid fa-arrow-right"></i>
+									</div>
+									<div class="tags_items">
+										<div class="img_tags">
+											<img src="../assets/cat5.jpg">
+										</div>
+										<div class="title_tags">
+											<h3>Tâm lý</h3>
+											<span>10 Photos</span>
+										</div>
+										<i class="fa-solid fa-arrow-right"></i>
+									</div>
 								</div>
-								<div class="section_content">
-									<div class="grid clearfix">
-
-										<!-- Small Card With Image -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog1.jpg" alt="">
-											<div class="card-body">
-												<div class="card-title card-title-small">
-													<a href="#">Địa điểm dịch vụ cắt tỉa long chó uy tính tại Đà Nẵng
-													</a>
-												</div>
-												<small class="post_meta"><a href="#">Nam
-														Nguyen</a><span>26/5/2021</span></small>
-											</div>
+								<div class="tags_popular">
+									<div class="tags_items">
+										<div class="img_tags">
+											<img src="../assets/cat8.jpg">
 										</div>
-
-										<!-- Small Card Without Image -->
-										<div class="card card_default card_small_no_image grid-item">
-											<div class="card-body">
-												<div class="card-title card-title-small">
-													<a href="#">Cách sóc chó con khỏe mạnh</a>
-												</div>
-												<small class="post_meta"><a href="#">Dung
-														Dang</a><span>1/4/2023</span></small>
-											</div>
+										<div class="title_tags">
+											<h3>Mới nhất</h3>
+											<span>23 Photos</span>
 										</div>
-
-										<!-- Small Card With Image -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog2.png" alt="">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Phương pháp giúp
-														mèo tăng cân hiệu quả</a></div>
-												<small class="post_meta"><a href="#">Huyen
-														Le</a><span>5/5/2023</span></small>
-											</div>
+										<i class="fa-solid fa-arrow-right"></i>
+									</div>
+									<div class="tags_items">
+										<div class="img_tags">
+											<img src="../assets/cat1.jpg">
 										</div>
-
-										<!-- Small Card With Image -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog3.png" alt="">
-											<div class="card-body">
-												<div class="card-title card-title-small">
-													<a href="#">Top thức ăn mèo ưa thích nhất</a>
-												</div>
-												<small class="post_meta">
-													<a href="#">Shop Tom
-													</a><span>22/2/2023</span></small>
-											</div>
+										<div class="title_tags">
+											<h3>Cách nuôi</h3>
+											<span>22 Photos</span>
 										</div>
-
-										<!-- Small Card With Background -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog4.jpg" alt="">
-											<div class="card-body">
-												<div class="card-title card-title-small">
-													<a href="#">Top shop thú cưng uy tín và giá rẻ tại Đà
-														Nẵng</a>
-												</div>
-												<small class="post_meta"><a href="#">Phuong Nguyen</a>
-													<span>25/8/2022</span></small>
-											</div>
+										<i class="fa-solid fa-arrow-right"></i>
+									</div>
+									<div class="tags_items">
+										<div class="img_tags">
+											<img src="../assets/cat2.jpg">
 										</div>
-
-										<!-- Small Card With Background -->
-										<div class="card card_default card_small_with_background grid-item">
-											<div class="card_background"
-												style="background-image:url(/assets/blog5.jpg)"></div>
-											<div class="card-body">
-												<div class="card-title card-title-small">
-													<a href="#">Top những giống chó cảnh đẹp nên nuôi</a>
-												</div>
-												<small class="post_meta"><a href="#">Dat Tran</a>
-													<span>12/12/2021</span></small>
-											</div>
+										<div class="title_tags">
+											<h3>Thời trang</h3>
+											<span>6 Photos</span>
 										</div>
-
-										<!-- Small Card With Image -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog6" alt="">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">CÁCH NHẬN BIẾT MÈO
-														MANG BẦU VÀ CÁCH CHĂM SÓC.</a></div>
-												<small class="post_meta"><a href="#">Dung
-														Le</a><span>22/12/2021</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card Without Image -->
-										<div class="card card_default card_small_no_image grid-item">
-											<div class="card-body">
-												<div class="card-title card-title-small">
-													<a href="#">Những bệnh thường lây truyền từ chó, mèo sang người</a>
-												</div>
-												<small class="post_meta"><a href="#">Luu Nguyen</a>
-													<span>12/11/2021</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card Without Image -->
-										<div class="card card_default card_small_no_image grid-item">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Những khám
-														phá thú vị về loài chó</a></div>
-												<small class="post_meta"><a href="#">Nguyen
-														Le</a><span>26/2/2021</span></small>
-											</div>
-										</div>
-
-										<!-- Default Card With Background -->
-										<div class="card card_default card_default_with_background grid-item">
-											<div class="card_background"
-												style="background-image:url(../assets/blog7.png)"></div>
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Sử Dụng
-														Tông Đơ Cắt Lông Chó Như Thế Nào?</a></div>
-											</div>
-										</div>
-
-										<!-- Default Card With Background -->
-										<div class="card card_default card_default_with_background grid-item">
-											<div class="card_background"
-												style="background-image:url(../assets/blog11.png)"></div>
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Danh sác
-														phòng khám thú y uy tính ?</a></div>
-											</div>
-										</div>
-
-										<!-- Small Card With Background -->
-										<div class="card card_default card_small_with_background grid-item">
-											<div class="card_background"
-												style="background-image:url(../assets/blog12.png)"></div>
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Kiến thức
-														thú y</a></div>
-												<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at
-														9:48 am</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card Without Image -->
-										<div class="card card_default card_small_no_image grid-item">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Dịch vụ trông giữ
-														chó mèo uy tín, giá rẻ ở Đà Nẵng</a></div>
-												<small class="post_meta"><a href="#">Nam
-														Le</a><span>1/1/2022</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card Without Image -->
-										<div class="card card_default card_small_no_image grid-item">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Dịch vụ cắt tỉa
-														lông chó uy tín tại Đà Nẵng hiện nay</a></div>
-												<small class="post_meta"><a href="#">Duy
-														Nguyen</a><span>8/7/2022</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card With Image -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog8.jpg" alt="">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Thức ăn hạt
-														royal canin cho mèo có tốt không?</a></div>
-												<small class="post_meta"><a href="#">Duy
-														Le</a><span>15/7/2021</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card With Image -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog9.jpeg" alt="">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Lợi ích
-														không ngờ từ dịch vụ spa thú cưng</a></div>
-												<small class="post_meta"><a href="#">Dung
-														Tran</a><span>17/8/2022</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card Without Image -->
-										<div class="card card_default card_small_no_image grid-item">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Tắm cho chó bằng
-														dầu gội đầu được không??</a></div>
-												<small class="post_meta"><a href="#">Thong
-														Tran</a><span>25/8/2021</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card With Image -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog10.png">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Tình trạng
-														niêm mạc niệu đạo rời khỏi vị trí ở mèo</a></div>
-												<small class="post_meta"><a href="#">Duy
-														Nghia</a><span>15/9/2022</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card With Background -->
-										<div class="card card_default card_small_with_background grid-item">
-											<div class="card_background"
-												style="background-image:url(../assets/blog17.jpg)"></div>
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Bài học ý nghĩa với
-														những chú chó</a></div>
-												<small class="post_meta"><a href="#">Vu
-														Nguyen</a><span>21/2/2022</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card With Background -->
-										<div class="card card_default card_small_with_background grid-item">
-											<div class="card_background"
-												style="background-image:url(../assets/blog13.png)"></div>
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Cho nhận
-														giải cứu hoàng thượng</a></div>
-												<small class="post_meta"><a href="#">Nam
-														Hoang</a><span>22/6/2121</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card With Image -->
-										<div class="card card_small_with_image grid-item">
-											<img class="card-img-top" src="../assets/blog14.png" alt="">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Cách chữa trị chứng
-														tiểu buốt và tiểu dắt ở mèo
-														Cách chữa trị chứng tiểu buốt và tiểu dắt ở mèo</a></div>
-												<small class="post_meta"><a href="#">Thuy
-														Nguyen</a><span>7/9/2122</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card Without Image -->
-										<div class="card card_default card_small_no_image grid-item">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="##">5 loài mèo
-														thông minh nhất thế giới. Bạn đã biết chưa?</a></div>
-												<small class="post_meta"><a href="#">Tu
-														Nguyen</a><span>17/7/2022</span></small>
-											</div>
-										</div>
-
-										<!-- Small Card Without Image -->
-										<div class="card card_default card_small_no_image grid-item">
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Tại sao mèo của tôi
-														theo tôi khắp mọi nơi?</a></div>
-												<small class="post_meta"><a href="#">Hoai
-														Le</a><span>26/9/2021</span></small>
-											</div>
-										</div>
-
-										<!-- Default Card With Background -->
-										<div class="card card_default card_default_with_background grid-item">
-											<div class="card_background"
-												style="background-image:url(../assets/blog15.png)"></div>
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">26 điều cần biết về
-														"mèo con chết</a></div>
-											</div>
-										</div>
-
-										<!-- Default Card With Background -->
-										<div class="card card_default card_default_with_background grid-item">
-											<div class="card_background"
-												style="background-image:url(../assets/blog16.webp)"></div>
-											<div class="card-body">
-												<div class="card-title card-title-small"><a href="#">Tình bạn giữa chó
-														và mèo</a></div>
-												<small class="post_meta"><a href="#">Hoai
-														Le</a><span>26/9/2021</span></small>
-											</div>
-										</div>
-
+										<i class="fa-solid fa-arrow-right"></i>
+									</div>
+									<div class="most_tags">
+										<i class="fa-solid fa-feather"></i>
+										Xem tất cả
 									</div>
 								</div>
 							</div>
+							<!-- Category -->
+							<div class="category">
+								<div class="section_panel d-flex flex-row align-items-center justify-content-start">
+									<div class="section_title">Đừng bỏ lỡ !</div>
+								</div>
+								<div class="section_content">
+									<!-- card-content -->
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog10.png">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog11.png">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog12.png">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog13.png">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog14.png">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog15.png">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog17.jpg">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog19.png">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog11.png">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_content">
+										<div class="content_col">
+											<div class="content_img">
+												<img src="../assets/blog20.jpg">
+											</div>
+											<div class="content_content">
+												<div class="title_content">
+													<h3>Phải làm gì khi miêm mạc niêu đạo rời khỏi vị trí ở mèo?</h3>
+													<span>
+														Niêm mạc niệu đạo rời khỏi vị trí là một căn bệnh phát triển ở
+														đường
+														tiết niệu của mèo. Tình trạng này có thể ảnh hưởng đến đường
+														tiết
+														niệu
+														và thận.</span>
+												</div>
+												<div class="user_post">
+													<div class="userImg">
+														<img src="../assets/cat1.jpg">
+													</div>
+													<div class="timePost">
+														<h4>Tim Lee</h4>
+														<span>22/4/2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 
+								</div>
+								<div class="listPage">
+
+								</div>
+							</div>
 						</div>
 						<!-- <div class="load_more">
 							<div id="load_more" class="load_more_button text-center trans_200">Load More</div>
@@ -702,7 +758,8 @@
 							<div class="sidebar_section">
 								<div class="advertising">
 									<div class="advertising_background"
-										style="background-image:url(../assets/blog21.png)"></div>
+										style="background-image:url(../assets/blog21.png)">
+									</div>
 									<div
 										class="advertising_content d-flex flex-column align-items-start justify-content-end">
 										<div class="advertising_perc">-15%</div>
@@ -1056,6 +1113,7 @@
 	<script src="../JS/owl.carousel.js"></script>
 	<script src="../JS/masonry.js"></script>
 	<script src="../JS/category.js"></script>
+	<script src="../JS/categoryPT.js"></script>
 </body>
 
 </html>
